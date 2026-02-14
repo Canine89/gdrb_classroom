@@ -19,7 +19,7 @@ export default async function Home() {
   );
 
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="flex min-h-screen flex-col overflow-x-hidden bg-white">
       <Header />
       <BookContent booksData={booksData} />
       <Footer />

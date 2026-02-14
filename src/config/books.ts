@@ -4,8 +4,8 @@ export const books: BookConfig[] = [
   {
     id: "google-classroom",
     name: "구글 클래스룸 수업활용법",
-    sheetId: process.env.GOOGLE_SHEET_ID ?? "",
-    resourcesGid: process.env.RESOURCES_GID ?? "0",
-    referencesGid: process.env.REFERENCES_GID ?? "2013574828",
+    sheetId: "1Xa-8NEeFRWHgLSRS8AToRHCSrslqWwD6C5gUhrUOJkI",
+    resourcesGid: "0",
+    referencesGid: "2013574828",
   },
 ];

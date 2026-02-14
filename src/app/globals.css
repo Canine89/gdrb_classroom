@@ -93,3 +93,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+/* Hide scrollbar for horizontal scroll areas */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

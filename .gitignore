@@ -41,3 +41,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 Frame 79.png
+
+# playwright cli artifacts
+.playwright-cli/
+
+# temp artwork/screenshots
+제목_없는_아트워크*.png
+2026-*.png
+KakaoTalk_logo.svg.png

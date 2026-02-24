@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { ResourceBadge } from "./resource-badge";
 import { driveUrlToThumbnail, getPlaceholderGradient } from "@/lib/image-utils";
@@ -21,11 +22,12 @@ export function ResourceCard({ resource, index }: ResourceCardProps) {
       {/* Thumbnail */}
       <div className="relative aspect-[16/10] overflow-hidden bg-[#f5f5f5]">
         {thumbnailUrl ? (
-          <img
+          <Image
             src={thumbnailUrl}
             alt={resource.displayTitle}
-            loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            fill
+            sizes="(max-width: 640px) 100vw, 50vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div

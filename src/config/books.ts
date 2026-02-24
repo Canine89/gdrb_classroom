@@ -7,6 +7,12 @@ export const books: BookConfig[] = [
     sheetId: "1Xa-8NEeFRWHgLSRS8AToRHCSrslqWwD6C5gUhrUOJkI",
     resourcesGid: "0",
     referencesGid: "2013574828",
-    promptsGid: "1701772222", // 프롬프트 모음집
+    promptsGid: "1701772222",
+    coverImage: "/book-cover-google-classroom.jpg",
+    purchaseLinks: [
+      { store: "교보문고", url: "https://bit.ly/4aN3nnx" },
+      { store: "예스24", url: "https://bit.ly/4aLa8Gq" },
+      { store: "알라딘", url: "https://bit.ly/40axdNX" },
+    ],
   },
 ];

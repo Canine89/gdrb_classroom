@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BookTabs } from "./book-tabs";
 import { PromotionSidebars } from "./promotion-sidebars";
+import { ShoppingCart } from "lucide-react";
 import type { BookConfig, Resource, ReferenceLink, PromptItem, PromotionItem } from "@/lib/types";
 
 interface BookData {
@@ -50,7 +51,14 @@ export function BookContent({ booksData, promotions = [] }: BookContentProps) {
       </nav>
 
       {/* Hero section */}
-      <section className="mx-auto w-full max-w-[960px] px-4 pt-5 pb-4 sm:px-6 sm:pt-10 sm:pb-6">
+      <section className="relative mx-auto w-full max-w-[960px] overflow-visible px-4 pt-5 pb-4 sm:px-6 sm:pt-10 sm:pb-6">
+        {/* 와글와글 캐릭터들 - 카피 오른쪽 빈 공간 */}
+        <img src="/avatar-1.png" alt="" aria-hidden className="pointer-events-none absolute right-[53%] top-45 hidden w-[42px] -rotate-[6deg] animate-[floatA_3s_ease-in-out_infinite] lg:block" />
+        <img src="/avatar-2.png" alt="" aria-hidden className="pointer-events-none absolute right-[56%] top-24 hidden w-[42px] rotate-[5deg] animate-[floatB_3.5s_ease-in-out_0.3s_infinite] lg:block" />
+        <img src="/avatar-3.png" alt="" aria-hidden className="pointer-events-none absolute right-[45%] top-18 hidden w-[42px] -rotate-[4deg] animate-[floatC_4s_ease-in-out_0.6s_infinite] lg:block" />
+        <img src="/avatar-4.png" alt="" aria-hidden className="pointer-events-none absolute right-[44%] top-42 hidden w-[42px] rotate-[8deg] animate-[floatA_3.2s_ease-in-out_0.5s_infinite] lg:block" />
+        <img src="/avatar-5.png" alt="" aria-hidden className="pointer-events-none absolute right-[50%] top-32 hidden w-[42px] -rotate-[7deg] animate-[floatB_3.8s_ease-in-out_0.8s_infinite] lg:block" />
+
         <div className="flex items-center justify-between gap-4">
           <div className="min-w-0">
             <h2 className="text-[22px] font-extrabold leading-[1.35] text-[#1a1a1a] sm:text-[30px] lg:text-[36px]">
@@ -70,12 +78,43 @@ export function BookContent({ booksData, promotions = [] }: BookContentProps) {
               도서 연계 자료와 참고 링크를 한곳에서 ·{" "}
               <span className="font-semibold text-primary">{current.book.name}</span>
             </p>
+
+            {/* 도서 구매 링크 */}
+            {current.book.purchaseLinks && current.book.purchaseLinks.length > 0 && (
+              <div className="mt-3 flex flex-wrap items-center gap-2 sm:mt-4">
+                <span className="flex items-center gap-1 text-[12px] font-bold text-[#1a1a1a] sm:text-[13px]">
+                  <ShoppingCart className="h-3.5 w-3.5" />
+                  바로 구매
+                </span>
+                {current.book.purchaseLinks.map((link, i) => (
+                  <a
+                    key={link.store}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="animate-wiggle touch-press inline-flex animate-[fadeSlideIn_0.5s_ease_both] items-center rounded-full border border-[#e0e0e0] bg-white px-3 py-1.5 text-[12px] font-semibold text-[#555] shadow-sm transition-all hover:border-primary hover:bg-primary hover:text-white hover:shadow-md sm:px-3.5 sm:py-2 sm:text-[13px]"
+                    style={{ animationDelay: `${i * 200}ms` }}
+                  >
+                    {link.store}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
-          <img
-            src="/hero-illustration.png"
-            alt="슬기로운 교사 생활"
-            className="hidden w-[180px] shrink-0 sm:block lg:w-[260px]"
-          />
+          {/* 도서 표지 */}
+          {current.book.coverImage ? (
+            <img
+              src={current.book.coverImage}
+              alt={current.book.name}
+              className="hidden w-[140px] shrink-0 rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] sm:block lg:w-[180px]"
+            />
+          ) : (
+            <img
+              src="/hero-illustration.png"
+              alt="슬기로운 교사 생활"
+              className="hidden w-[180px] shrink-0 sm:block lg:w-[260px]"
+            />
+          )}
         </div>
       </section>
 

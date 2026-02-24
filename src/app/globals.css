@@ -134,6 +134,47 @@ textarea {
   touch-action: manipulation;
 }
 
+/* 구매 버튼 등장 애니메이션 */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 딸랑딸랑 흔들림 */
+@keyframes wiggle {
+  0%, 86% { transform: rotate(0deg); }
+  88% { transform: rotate(-4deg); }
+  90% { transform: rotate(4deg); }
+  92% { transform: rotate(-4deg); }
+  94% { transform: rotate(3deg); }
+  96% { transform: rotate(-2deg); }
+  98% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+.animate-wiggle {
+  animation: wiggle 4s ease-in-out infinite;
+}
+
+/* 캐릭터 둥둥 떠다니기 */
+@keyframes floatA {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes floatB {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(3deg); }
+}
+@keyframes floatC {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(-3deg); }
+}
+
 /* 모바일 active 상태 시 부드러운 축소 */
 @media (hover: none) and (pointer: coarse) {
   .touch-press:active {

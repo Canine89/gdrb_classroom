@@ -32,13 +32,20 @@ export interface PromptItem {
   tip: string;       // 꿀팁
 }
 
+export interface PurchaseLink {
+  store: string;
+  url: string;
+}
+
 export interface BookConfig {
   id: string;
   name: string;
   sheetId: string;
   resourcesGid: string;
   referencesGid: string;
-  promptsGid?: string; // 프롬프트 모음집 시트 (선택)
+  promptsGid?: string;
+  purchaseLinks?: PurchaseLink[];
+  coverImage?: string;
 }
 
 export interface PromotionItem {

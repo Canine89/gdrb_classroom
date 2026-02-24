@@ -1,0 +1,133 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - generic [ref=e8]: 슬기로운 교사 생활
+    - navigation [ref=e9]:
+      - button "구글 클래스룸 수업 활용법" [ref=e12]: 구글 클래스룸 수업 활용법
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - heading "골든래빗 도서와 함께 수업이 더 쉬워집니다" [level=2] [ref=e17]:
+          - text: 골든래빗 도서와 함께
+          - text: 수업이
+          - generic [ref=e18]: 더 쉬워집니다
+        - paragraph [ref=e19]: 도서 연계 자료와 참고 링크를 한곳에서 · 구글 클래스룸 수업 활용법
+      - img "슬기로운 교사 생활" [ref=e20]
+    - generic [ref=e24]:
+      - complementary "추천 도서" [ref=e26]:
+        - link "카카오톡 [커뮤니티] 카카오톡 Q&A 바로가기" [ref=e27] [cursor=pointer]:
+          - /url: https://open.kakao.com/o/gtFz4Agh
+          - img "카카오톡" [ref=e29]
+          - generic [ref=e30]:
+            - paragraph [ref=e31]: "[커뮤니티] 카카오톡 Q&A"
+            - generic [ref=e32]:
+              - img [ref=e33]
+              - text: 바로가기
+        - link "기대평 이벤트 [이벤트] 기대평 작성 시 커피 기프티콘(추첨) ~ 3월 20일까지 바로가기" [ref=e37] [cursor=pointer]:
+          - /url: https://event.yes24.com/detail?eventNo=267430
+          - img "기대평 이벤트" [ref=e39]
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: "[이벤트] 기대평 작성 시 커피 기프티콘(추첨)"
+            - paragraph [ref=e42]: ~ 3월 20일까지
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - text: 바로가기
+      - main [ref=e49]:
+        - generic [ref=e50]:
+          - tablist [ref=e52]:
+            - tab "제공 자료 5" [selected] [ref=e53]:
+              - text: 제공 자료
+              - generic [ref=e54]: "5"
+            - tab "참고 링크 18" [ref=e55]:
+              - text: 참고 링크
+              - generic [ref=e56]: "18"
+            - tab "프롬프트 41" [ref=e57]:
+              - text: 프롬프트
+              - generic [ref=e58]: "41"
+          - tabpanel "제공 자료 5" [ref=e59]:
+            - generic [ref=e60]:
+              - link "구글 클래스룸 기준표 템플릿 구글 스프레드시트 구글 클래스룸 기준표 템플릿 Class UP 02 자료 열기" [ref=e61] [cursor=pointer]:
+                - /url: https://bit.ly/49LVMVR
+                - img "구글 클래스룸 기준표 템플릿" [ref=e63]
+                - generic [ref=e64]:
+                  - generic [ref=e65]:
+                    - img [ref=e66]
+                    - text: 구글 스프레드시트
+                  - heading "구글 클래스룸 기준표 템플릿" [level=3] [ref=e69]
+                  - paragraph [ref=e70]: Class UP 02
+                  - generic [ref=e71]:
+                    - text: 자료 열기
+                    - img [ref=e72]
+              - link "초록 집중 슬라이드 템플릿 구글 슬라이드 초록 집중 슬라이드 템플릿 Class 09 자료 열기" [ref=e74] [cursor=pointer]:
+                - /url: https://bit.ly/4q5cCVP
+                - img "초록 집중 슬라이드 템플릿" [ref=e76]
+                - generic [ref=e77]:
+                  - generic [ref=e78]:
+                    - img [ref=e79]
+                    - text: 구글 슬라이드
+                  - heading "초록 집중 슬라이드 템플릿" [level=3] [ref=e82]
+                  - paragraph [ref=e83]: Class 09
+                  - generic [ref=e84]:
+                    - text: 자료 열기
+                    - img [ref=e85]
+              - link "개인 과제 이미지 자리표시자 템플릿 구글 슬라이드 개인 과제 이미지 자리표시자 템플릿 Class 09 자료 열기" [ref=e87] [cursor=pointer]:
+                - /url: https://bit.ly/49v6xNj
+                - img "개인 과제 이미지 자리표시자 템플릿" [ref=e89]
+                - generic [ref=e90]:
+                  - generic [ref=e91]:
+                    - img [ref=e92]
+                    - text: 구글 슬라이드
+                  - heading "개인 과제 이미지 자리표시자 템플릿" [level=3] [ref=e95]
+                  - paragraph [ref=e96]: Class 09
+                  - generic [ref=e97]:
+                    - text: 자료 열기
+                    - img [ref=e98]
+              - link "경기도교육청 학교 체육업무 매뉴얼 노트북LM 경기도교육청 학교 체육업무 매뉴얼 Class 23 자료 열기" [ref=e100] [cursor=pointer]:
+                - /url: https://bit.ly/3NWS2JA
+                - img "경기도교육청 학교 체육업무 매뉴얼" [ref=e102]
+                - generic [ref=e103]:
+                  - generic [ref=e104]:
+                    - img [ref=e105]
+                    - text: 노트북LM
+                  - heading "경기도교육청 학교 체육업무 매뉴얼" [level=3] [ref=e113]
+                  - paragraph [ref=e114]: Class 23
+                  - generic [ref=e115]:
+                    - text: 자료 열기
+                    - img [ref=e116]
+              - link "서·논술형 평가 파트너 실습 자료 모음 실습 파일 서·논술형 평가 파트너 실습 자료 모음 Class 17 자료 열기" [ref=e118] [cursor=pointer]:
+                - /url: https://bit.ly/4k4HMv5
+                - img "서·논술형 평가 파트너 실습 자료 모음" [ref=e120]
+                - generic [ref=e121]:
+                  - generic [ref=e122]:
+                    - img [ref=e123]
+                    - text: 실습 파일
+                  - heading "서·논술형 평가 파트너 실습 자료 모음" [level=3] [ref=e126]
+                  - paragraph [ref=e127]: Class 17
+                  - generic [ref=e128]:
+                    - text: 자료 열기
+                    - img [ref=e129]
+      - complementary "추천 도서" [ref=e132]:
+        - link "예스24 무료 특강 [특강] 예스24 무료 강의 신청 3월 17일(화) 19시 바로가기" [ref=e133] [cursor=pointer]:
+          - /url: https://event.yes24.com/detail?eventNo=267429
+          - img "예스24 무료 특강" [ref=e135]
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: "[특강] 예스24 무료 강의 신청"
+            - paragraph [ref=e138]: 3월 17일(화) 19시
+            - generic [ref=e139]:
+              - img [ref=e140]
+              - text: 바로가기
+        - link "교보문고 무료 특강 [특강] 교보문고 무료 강의 신청 3월 24일(화) 19시 바로가기" [ref=e144] [cursor=pointer]:
+          - /url: https://event.kyobobook.co.kr/detail/244458
+          - img "교보문고 무료 특강" [ref=e146]
+          - generic [ref=e147]:
+            - paragraph [ref=e148]: "[특강] 교보문고 무료 강의 신청"
+            - paragraph [ref=e149]: 3월 24일(화) 19시
+            - generic [ref=e150]:
+              - img [ref=e151]
+              - text: 바로가기
+    - contentinfo [ref=e155]:
+      - paragraph [ref=e157]: © 2026 슬기로운 교사 생활 · 골든래빗 도서 기반
+  - button "Open Next.js Dev Tools" [ref=e163] [cursor=pointer]:
+    - img [ref=e164]
+  - alert [ref=e167]

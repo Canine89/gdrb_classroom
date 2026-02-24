@@ -1,0 +1,163 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - generic [ref=e8]: 슬기로운 교사 생활
+    - navigation [ref=e9]:
+      - button "구글 클래스룸 수업 활용법" [ref=e12]: 구글 클래스룸 수업 활용법
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - heading "골든래빗 도서와 함께 수업이 더 쉬워집니다" [level=2] [ref=e17]:
+          - text: 골든래빗 도서와 함께
+          - text: 수업이
+          - generic [ref=e18]: 더 쉬워집니다
+        - paragraph [ref=e19]: 도서 연계 자료와 참고 링크를 한곳에서 · 구글 클래스룸 수업 활용법
+      - img "슬기로운 교사 생활" [ref=e20]
+    - generic [ref=e24]:
+      - complementary "추천 도서" [ref=e26]:
+        - link "카카오톡 [커뮤니티] 카카오톡 Q&A 접속 링크" [ref=e27] [cursor=pointer]:
+          - /url: https://open.kakao.com/o/gtFz4Agh
+          - img "카카오톡" [ref=e29]
+          - generic [ref=e30]:
+            - paragraph [ref=e31]: "[커뮤니티] 카카오톡 Q&A"
+            - generic [ref=e32]:
+              - img [ref=e33]
+              - text: 접속 링크
+        - link "기대평 이벤트 [이벤트] 기대평 작성 시 커피 기프티콘(추첨) ~ 3월 20일까지 접속 링크" [ref=e37] [cursor=pointer]:
+          - /url: https://event.yes24.com/detail?eventNo=267430
+          - img "기대평 이벤트" [ref=e39]
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: "[이벤트] 기대평 작성 시 커피 기프티콘(추첨)"
+            - paragraph [ref=e42]: ~ 3월 20일까지
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - text: 접속 링크
+      - main [ref=e49]:
+        - generic [ref=e50]:
+          - tablist [ref=e52]:
+            - tab "제공 자료 5" [ref=e53]:
+              - text: 제공 자료
+              - generic [ref=e54]: "5"
+            - tab "참고 링크 18" [active] [selected] [ref=e55]:
+              - text: 참고 링크
+              - generic [ref=e56]: "18"
+            - tab "프롬프트 모음집 41" [ref=e57]:
+              - text: 프롬프트 모음집
+              - generic [ref=e58]: "41"
+          - tabpanel "참고 링크 18" [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]:
+                  - img [ref=e172]
+                  - heading "학교업무매뉴얼 다운로드" [level=3] [ref=e174]
+                - generic [ref=e175]:
+                  - link "경기도교육청 학교업무매뉴얼 자료실" [ref=e176] [cursor=pointer]:
+                    - /url: https://bit.ly/4q3J3DX
+                    - generic [ref=e177]: 경기도교육청 학교업무매뉴얼 자료실
+                    - img [ref=e178]
+                  - link "경기도교육청 e-DASAN 현장지원" [ref=e180] [cursor=pointer]:
+                    - /url: https://bit.ly/4q3Je25
+                    - generic [ref=e181]: 경기도교육청 e-DASAN 현장지원
+                    - img [ref=e182]
+                  - link "인천광역시교육청 학교업무매뉴얼" [ref=e184] [cursor=pointer]:
+                    - /url: https://bit.ly/4bm3mc1
+                    - generic [ref=e185]: 인천광역시교육청 학교업무매뉴얼
+                    - img [ref=e186]
+                  - link "부산광역시교육청 학교지원서비스" [ref=e188] [cursor=pointer]:
+                    - /url: https://bit.ly/45zhPxA
+                    - generic [ref=e189]: 부산광역시교육청 학교지원서비스
+                    - img [ref=e190]
+                  - link "울산광역시교육청 학교업무정보나눔터" [ref=e192] [cursor=pointer]:
+                    - /url: https://bit.ly/45w1GsI
+                    - generic [ref=e193]: 울산광역시교육청 학교업무정보나눔터
+                    - img [ref=e194]
+                  - link "전북특별자치도교육청 업무매뉴얼 자료실" [ref=e196] [cursor=pointer]:
+                    - /url: https://bit.ly/4pWT6ux
+                    - generic [ref=e197]: 전북특별자치도교육청 업무매뉴얼 자료실
+                    - img [ref=e198]
+                  - link "서울특별시교육청 교육행정지원시스템" [ref=e200] [cursor=pointer]:
+                    - /url: https://baro.sen.go.kr
+                    - generic [ref=e201]: 서울특별시교육청 교육행정지원시스템
+                    - img [ref=e202]
+                  - link "대구광역시교육청 에듀나비 업무지원" [ref=e204] [cursor=pointer]:
+                    - /url: https://edunavi.kr
+                    - generic [ref=e205]: 대구광역시교육청 에듀나비 업무지원
+                    - img [ref=e206]
+                  - link "경상남도교육청 디지털자료관" [ref=e208] [cursor=pointer]:
+                    - /url: https://gnfe.gne.go.kr/ebook
+                    - generic [ref=e209]: 경상남도교육청 디지털자료관
+                    - img [ref=e210]
+              - generic [ref=e212]:
+                - generic [ref=e213]:
+                  - img [ref=e214]
+                  - heading "지도서, 교과서 PDF 다운로드" [level=3] [ref=e216]
+                - generic [ref=e217]:
+                  - link "미래엔 엠티처 (교과서/지도서 PDF)" [ref=e218] [cursor=pointer]:
+                    - /url: https://bit.ly/3M4jvbM
+                    - generic [ref=e219]: 미래엔 엠티처 (교과서/지도서 PDF)
+                    - img [ref=e220]
+                  - link "금성출판사 티칭허브" [ref=e222] [cursor=pointer]:
+                    - /url: https://bit.ly/4pWreXd
+                    - generic [ref=e223]: 금성출판사 티칭허브
+                    - img [ref=e224]
+                  - link "비상교육 비바샘" [ref=e226] [cursor=pointer]:
+                    - /url: https://vivasam.com
+                    - generic [ref=e227]: 비상교육 비바샘
+                    - img [ref=e228]
+                  - link "천재교육 T-셀파" [ref=e230] [cursor=pointer]:
+                    - /url: https://ele.tsherpa.co.kr
+                    - generic [ref=e231]: 천재교육 T-셀파
+                    - img [ref=e232]
+                  - link "동아출판 두클래스" [ref=e234] [cursor=pointer]:
+                    - /url: https://douclass.com
+                    - generic [ref=e235]: 동아출판 두클래스
+                    - img [ref=e236]
+                  - link "YBM Y클라우드" [ref=e238] [cursor=pointer]:
+                    - /url: https://ybmcloud.com
+                    - generic [ref=e239]: YBM Y클라우드
+                    - img [ref=e240]
+                  - link "지학사 티솔루션" [ref=e242] [cursor=pointer]:
+                    - /url: https://tsol.jihak.co.kr
+                    - generic [ref=e243]: 지학사 티솔루션
+                    - img [ref=e244]
+              - generic [ref=e246]:
+                - generic [ref=e247]:
+                  - img [ref=e248]
+                  - heading "파일 용량 줄이기" [level=3] [ref=e250]
+                - link "Adobe PDF 압축" [ref=e252] [cursor=pointer]:
+                  - /url: https://adobe.ly/49xjmGM
+                  - generic [ref=e253]: Adobe PDF 압축
+                  - img [ref=e254]
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - img [ref=e258]
+                  - heading "에듀벤처 구글 워크스페이스 가이드" [level=3] [ref=e260]
+                - link "교육용 워크스페이스 신청 방법" [ref=e262] [cursor=pointer]:
+                  - /url: https://gw.googleforeducation.org/apply/boe
+                  - generic [ref=e263]: 교육용 워크스페이스 신청 방법
+                  - img [ref=e264]
+      - complementary "추천 도서" [ref=e132]:
+        - link "예스24 무료 특강 [특강] 예스24 무료 강의 신청 3월 17일(화) 19시 접속 링크" [ref=e133] [cursor=pointer]:
+          - /url: https://event.yes24.com/detail?eventNo=267429
+          - img "예스24 무료 특강" [ref=e135]
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: "[특강] 예스24 무료 강의 신청"
+            - paragraph [ref=e138]: 3월 17일(화) 19시
+            - generic [ref=e139]:
+              - img [ref=e140]
+              - text: 접속 링크
+        - link "교보문고 무료 특강 [특강] 교보문고 무료 강의 신청 3월 24일(화) 19시 접속 링크" [ref=e144] [cursor=pointer]:
+          - /url: https://event.kyobobook.co.kr/detail/244458
+          - img "교보문고 무료 특강" [ref=e146]
+          - generic [ref=e147]:
+            - paragraph [ref=e148]: "[특강] 교보문고 무료 강의 신청"
+            - paragraph [ref=e149]: 3월 24일(화) 19시
+            - generic [ref=e150]:
+              - img [ref=e151]
+              - text: 접속 링크
+    - contentinfo [ref=e155]:
+      - paragraph [ref=e157]: © 2026 슬기로운 교사 생활 · 골든래빗 도서 기반
+  - button "Open Next.js Dev Tools" [ref=e163] [cursor=pointer]:
+    - img [ref=e164]
+  - alert [ref=e167]

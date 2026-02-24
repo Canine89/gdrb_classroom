@@ -21,6 +21,8 @@ export function BookContent({ booksData, promotions = [] }: BookContentProps) {
   const [activeBookIdx, setActiveBookIdx] = useState(0);
   const current = booksData[activeBookIdx];
 
+  const hasPromotions = promotions.length > 0;
+
   return (
     <>
       {/* Book navigation tabs */}
@@ -92,32 +94,43 @@ export function BookContent({ booksData, promotions = [] }: BookContentProps) {
           <img src="/chalk-loop.png" alt="" className="absolute -right-[6%] top-[1300px] w-[340px] rotate-[25deg] opacity-[0.10]" />
         </div>
 
-        <div className="relative flex flex-col lg:flex-row">
-          {/* Mobile: 홍보 패널 가로 스크롤 */}
-          {promotions.length > 0 && (
+        {/* Mobile: 홍보 패널 가로 스크롤 */}
+        {hasPromotions && (
+          <div className="relative xl:hidden">
             <PromotionSidebars promotions={promotions} variant="mobile" />
-          )}
+          </div>
+        )}
 
-          {/* Desktop: 좌측 2개 | 메인 | 우측 2개 */}
-          <div className="flex min-w-0 flex-1 flex-col lg:flex-row">
-            {promotions.length > 0 && (
-              <div className="hidden lg:block">
-                <PromotionSidebars promotions={promotions} variant="left" />
+        {/* 3-column layout (xl+) / single column (below xl) */}
+        <div className="relative mx-auto max-w-[1440px]">
+          <div className="flex">
+            {/* Left sidebar */}
+            {hasPromotions && (
+              <div className="hidden xl:block">
+                <div className="sticky top-[60px] pt-6">
+                  <PromotionSidebars promotions={promotions} variant="left" />
+                </div>
               </div>
             )}
-            <div className="flex min-w-0 flex-1 justify-center">
-              <main className="w-full max-w-[960px] px-4 py-4 sm:px-6 sm:py-10">
+
+            {/* Main content */}
+            <div className="min-w-0 flex-1">
+              <div className="mx-auto max-w-[960px] px-4 py-4 sm:px-6 sm:py-10">
                 <BookTabs
                   key={current.book.id}
                   resources={current.resources}
                   references={current.references}
                   prompts={current.prompts}
                 />
-              </main>
+              </div>
             </div>
-            {promotions.length > 0 && (
-              <div className="hidden lg:block">
-                <PromotionSidebars promotions={promotions} variant="right" />
+
+            {/* Right sidebar */}
+            {hasPromotions && (
+              <div className="hidden xl:block">
+                <div className="sticky top-[60px] pt-6">
+                  <PromotionSidebars promotions={promotions} variant="right" />
+                </div>
               </div>
             )}
           </div>

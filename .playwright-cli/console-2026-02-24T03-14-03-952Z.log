@@ -1,0 +1,26 @@
+[  237419ms] [ERROR] ./src/components/promotion-panel.tsx:36:11
+Parsing ecmascript source code failed
+  34 |       {showKakaoLogo && (
+  35 |         <div className="hidden lg:flex lg:items-center lg:justify-center bg-[#FEE500] p-4 sm:p-5"
+> 36 |           <img
+     |           ^
+  37 |             src="/kakao-talk-logo.png"
+  38 |             alt="카카오톡"
+  39 |             className="h-12 w-auto sm:h-14"
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/promotion-panel.tsx [Client Component Browser]
+    ./src/components/promotion-sidebars.tsx [Client Component Browser]
+    ./src/components/book-content.tsx [Client Component Browser]
+    ./src/components/book-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/promotion-panel.tsx [Client Component SSR]
+    ./src/components/promotion-sidebars.tsx [Client Component SSR]
+    ./src/components/book-content.tsx [Client Component SSR]
+    ./src/components/book-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component] @ http://localhost:4000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127

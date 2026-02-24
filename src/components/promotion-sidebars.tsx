@@ -121,7 +121,7 @@ export function PromotionSidebars({ promotions, variant }: PromotionSidebarsProp
 
   if (variant === "mobile") {
     return (
-      <div className="mx-4 mt-4 rounded-2xl bg-[#fafaf8] px-3 pb-3 pt-3 lg:hidden">
+      <div className="mx-4 mt-4 rounded-2xl bg-[#fafaf8] px-3 pb-3 pt-3 xl:hidden">
         <div
           ref={scrollRef}
           className="snap-x-proximity scroll-smooth-touch flex gap-3 overflow-x-auto scrollbar-none"
@@ -153,9 +153,7 @@ export function PromotionSidebars({ promotions, variant }: PromotionSidebarsProp
   return (
     <aside
       aria-label="추천 도서"
-      className={`flex shrink-0 flex-col gap-4 px-4 pt-6 ${
-        variant === "left" ? "lg:w-52 xl:w-60" : "lg:w-52 xl:w-60"
-      }`}
+      className="flex w-[220px] shrink-0 flex-col gap-4 px-4"
     >
       {panels.map((item) => (
         <PromotionPanel key={item.id} item={item} />

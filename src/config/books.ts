@@ -7,5 +7,6 @@ export const books: BookConfig[] = [
     sheetId: "1Xa-8NEeFRWHgLSRS8AToRHCSrslqWwD6C5gUhrUOJkI",
     resourcesGid: "0",
     referencesGid: "2013574828",
+    promptsGid: "1701772222", // 프롬프트 모음집
   },
 ];

@@ -86,19 +86,58 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+  }
   body {
     @apply bg-background text-foreground;
     letter-spacing: -0.03em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
 }
 
-/* Hide scrollbar for horizontal scroll areas */
+/* 스크롤바 숨김 */
 .scrollbar-none {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+/* iOS 부드러운 스크롤 + 오버스크롤 방지 */
+.scroll-smooth-touch {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
+/* 가로 스크롤 스냅 (proximity: 부드러운 UX) */
+.snap-x-proximity {
+  scroll-snap-type: x proximity;
+}
+.snap-x-proximity > * {
+  scroll-snap-align: start;
+}
+
+/* 터치 반응 최적화: 300ms 딜레이 제거 */
+a,
+button,
+[role="button"],
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+/* 모바일 active 상태 시 부드러운 축소 */
+@media (hover: none) and (pointer: coarse) {
+  .touch-press:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
 }

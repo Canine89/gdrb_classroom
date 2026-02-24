@@ -1,4 +1,4 @@
-import type { Resource, ResourceType, ReferenceLink } from "./types";
+import type { Resource, ResourceType, ReferenceLink, PromptItem, PromotionItem } from "./types";
 
 /**
  * RFC 4180 compliant CSV parser.
@@ -143,4 +143,46 @@ export function parseReferenceLinks(csvText: string): ReferenceLink[] {
       link: ensureUrl(cols[3] ?? ""),
     };
   }).filter((r) => r.title && r.link);
+}
+
+/**
+ * Parse prompts sheet (프롬프트 모음집).
+ * Columns: 순번, 목차, 페이지, 제목, 실습 번호, 프롬프트, 꿀팁
+ */
+export function parsePrompts(csvText: string): PromptItem[] {
+  const rows = parseCSV(csvText);
+  if (rows.length <= 1) return [];
+
+  return rows
+    .slice(1)
+    .map((cols, idx) => ({
+      id: parseInt(cols[0], 10) || idx + 1,
+      toc: (cols[1] ?? "").trim(),
+      page: (cols[2] ?? "").trim(),
+      title: (cols[3] ?? "").trim(),
+      practiceNo: (cols[4] ?? "").trim(),
+      prompt: (cols[5] ?? "").trim(),
+      tip: (cols[6] ?? "").trim(),
+    }))
+    .filter((p) => p.prompt || p.title);
+}
+
+/**
+ * Parse 도서 홍보 sheet.
+ * Columns: A=순번, B=광고 카피, C=일시, D=링크
+ */
+export function parsePromotions(csvText: string): PromotionItem[] {
+  const rows = parseCSV(csvText);
+  if (rows.length <= 1) return [];
+
+  return rows
+    .slice(1)
+    .map((cols, idx) => ({
+      id: parseInt(cols[0], 10) || idx + 1,
+      copy: (cols[1] ?? "").trim(),
+      date: (cols[2] ?? "").trim(),
+      link: ensureUrl(cols[3] ?? ""),
+    }))
+    .filter((p) => p.copy && p.link)
+    .slice(0, 4); // 최대 4개
 }

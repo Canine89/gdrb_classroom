@@ -22,10 +22,28 @@ export interface ReferenceLink {
   link: string;
 }
 
+export interface PromptItem {
+  id: number;
+  toc: string;       // 목차
+  page: string;      // 페이지
+  title: string;     // 제목
+  practiceNo: string; // 실습 번호
+  prompt: string;    // 프롬프트
+  tip: string;       // 꿀팁
+}
+
 export interface BookConfig {
   id: string;
   name: string;
   sheetId: string;
   resourcesGid: string;
   referencesGid: string;
+  promptsGid?: string; // 프롬프트 모음집 시트 (선택)
+}
+
+export interface PromotionItem {
+  id: number;
+  copy: string;   // B열: 광고 카피
+  date: string;   // C열: 일시
+  link: string;   // D열: 접속 링크
 }

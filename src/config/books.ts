@@ -15,4 +15,18 @@ export const books: BookConfig[] = [
       { store: "알라딘", url: "https://bit.ly/40axdNX" },
     ],
   },
+  {
+    id: "canva-ai",
+    name: "캔바 AI 수업 활용법",
+    sheetId: "1xqsNDu2Rl44mNpoKd9LxlzQfYBtB0jou1SvVpDMVSO8",
+    resourcesGid: "0",
+    referencesGid: "2013574828",
+    promptsGid: "1701772222",
+    coverImage: "/book-cover-canva.png",
+    purchaseLinks: [
+      { store: "교보문고", url: "#" },
+      { store: "예스24", url: "#" },
+      { store: "알라딘", url: "#" },
+    ],
+  },
 ];

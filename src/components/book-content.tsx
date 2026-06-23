@@ -29,7 +29,7 @@ export function BookContent({ booksData, promotions = [] }: BookContentProps) {
       {/* Book navigation tabs */}
       <nav className="border-b border-[#eee] bg-white">
         <div className="mx-auto max-w-[960px] px-4 sm:px-6">
-          <div className="-mb-px flex gap-0 overflow-x-auto scroll-smooth-touch scrollbar-none">
+          <div className="-mb-px flex gap-0 overflow-x-auto scroll-smooth-touch scrollbar-none pt-4">
             {booksData.map((bd, idx) => (
               <button
                 key={bd.book.id}
@@ -41,6 +41,13 @@ export function BookContent({ booksData, promotions = [] }: BookContentProps) {
                 }`}
               >
                 {bd.book.name}
+                {bd.book.isNew && (
+                  <span className="pointer-events-none absolute -right-3 -top-1.5 z-10 inline-flex animate-[newPop_1.6s_ease-in-out_infinite] items-center rounded-full bg-primary px-2.5 py-1 text-[10px] font-extrabold leading-none text-white shadow-[0_3px_10px_rgba(255,146,43,0.5)] sm:-right-4 sm:text-[11px]">
+                    {/* 말풍선 꼬리 - 글자 뒤(아래 레이어)에서 왼쪽 아래로 향함 */}
+                    <span className="absolute -bottom-[3px] left-2 z-0 h-2.5 w-2.5 rotate-45 rounded-[1px] bg-primary" />
+                    <span className="relative z-10">NEW!</span>
+                  </span>
+                )}
                 {idx === activeBookIdx && (
                   <span className="absolute bottom-0 left-0 right-0 h-[3px] rounded-full bg-primary" />
                 )}

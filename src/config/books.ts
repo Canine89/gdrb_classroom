@@ -23,6 +23,7 @@ export const books: BookConfig[] = [
     referencesGid: "2013574828",
     promptsGid: "1701772222",
     coverImage: "/book-cover-canva.png",
+    isNew: true,
     purchaseLinks: [
       { store: "교보문고", url: "#" },
       { store: "예스24", url: "#" },

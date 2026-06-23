@@ -46,6 +46,7 @@ export interface BookConfig {
   promptsGid?: string;
   purchaseLinks?: PurchaseLink[];
   coverImage?: string;
+  isNew?: boolean;
 }
 
 export interface PromotionItem {

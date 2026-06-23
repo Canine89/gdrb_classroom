@@ -161,6 +161,13 @@ textarea {
   animation: wiggle 4s ease-in-out infinite;
 }
 
+/* 신간 NEW! 말풍선 통통 튀기 */
+@keyframes newPop {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-3px) scale(1.06); }
+  60% { transform: translateY(-1px) scale(1.03); }
+}
+
 /* 캐릭터 둥둥 떠다니기 */
 @keyframes floatA {
   0%, 100% { transform: translateY(0); }

@@ -11,9 +11,10 @@ export const books: BookConfig[] = [
     coverImage: "/book-cover-canva.png",
     isNew: true,
     purchaseLinks: [
-      { store: "교보문고", url: "#" },
-      { store: "예스24", url: "#" },
-      { store: "알라딘", url: "#" },
+      { store: "골든래빗", url: "https://gdrb.kr/0008h" },
+      { store: "교보문고", url: "https://gdrb.kr/k000cz" },
+      { store: "알라딘", url: "https://gdrb.kr/a000d0" },
+      { store: "예스24", url: "https://gdrb.kr/y000d1" },
     ],
   },
   {
